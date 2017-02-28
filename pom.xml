@@ -129,6 +129,11 @@
           </dependencies>
         </plugin>
         <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+        <plugin>
           <artifactId>maven-scm-plugin</artifactId>
           <version>1.9.5</version>
           <configuration>
