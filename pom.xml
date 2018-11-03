@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nu.aron</groupId>
   <artifactId>maven-plugins</artifactId>
-  <version>5-SNAPSHOT</version>
+  <version>5</version>
   <packaging>pom</packaging>
   <description>
     Maven plugin versions and configuration.
@@ -15,6 +15,7 @@
     <connection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</connection>
     <developerConnection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</developerConnection>
     <url>https://github.com/andreasaronsson/maven-plugins</url>
+    <tag>maven-plugins-5</tag>
   </scm>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
