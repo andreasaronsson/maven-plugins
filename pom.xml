@@ -7,7 +7,6 @@
   <description>
     Maven plugin versions and configuration.
   </description>
-  <url>http://www.jeppesensystems.com</url>
   <scm>
     <connection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</connection>
     <developerConnection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</developerConnection>
