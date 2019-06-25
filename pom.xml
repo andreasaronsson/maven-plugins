@@ -22,12 +22,12 @@
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-file</artifactId>
-        <version>3.3.2</version>
+        <version>3.3.3</version>
       </extension>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-webdav-jackrabbit</artifactId>
-        <version>3.3.2</version>
+        <version>3.3.3</version>
       </extension>
     </extensions>
     <pluginManagement>
@@ -71,7 +71,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
+          <version>3.8.1</version>
           <configuration>
           <release>11</release>
           </configuration>
@@ -86,7 +86,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-source-plugin</artifactId>
-          <version>3.0.1</version>
+          <version>3.1.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -106,7 +106,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.1.1</version>
+          <version>3.1.2</version>
         </plugin>
         <plugin>
           <artifactId>maven-assembly-plugin</artifactId>
@@ -174,7 +174,6 @@
         </executions>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <executions>
           <execution>
@@ -186,7 +185,6 @@
         </executions>
       </plugin>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
         <version>3.0.0-M2</version>
         <executions>
@@ -198,7 +196,7 @@
             <configuration>
               <rules>
                 <requireMavenVersion>
-                  <version>3.5.4</version>
+                  <version>3.6.1</version>
                 </requireMavenVersion>
                 <requireJavaVersion>
                   <version>11</version>
@@ -227,7 +225,7 @@
           <plugin>
             <groupId>org.jacoco</groupId>
             <artifactId>jacoco-maven-plugin</artifactId>
-            <version>0.8.3</version>
+            <version>0.8.4</version>
             <executions>
               <execution>
                 <goals>
