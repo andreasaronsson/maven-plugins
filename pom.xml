@@ -2,13 +2,13 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nu.aron</groupId>
   <artifactId>maven-plugins</artifactId>
-  <version>12-SNAPSHOT</version>
+  <version>12</version>
   <packaging>pom</packaging>
   <description>Maven plugin versions and configuration.</description>
   <scm>
     <connection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</connection>
     <developerConnection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>rel-12</tag>
     <url>https://github.com/andreasaronsson/maven-plugins</url>
   </scm>
   <distributionManagement>
