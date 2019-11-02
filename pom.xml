@@ -16,7 +16,7 @@
     <repository>
       <id>bintray-aron-maven</id>
       <name>aron-maven</name>
-      <url>https://api.bintray.com/maven/aron/maven/${project.artifactId}/;publish=1</url>
+      <url>https://api.bintray.com/maven/aron/maven/${project.artifactId}/</url>
     </repository>
   </distributionManagement>
   <properties>
