@@ -1,18 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>nu.aron</groupId>
   <artifactId>maven-plugins</artifactId>
   <version>12-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <description>
-    Maven plugin versions and configuration.
-  </description>
+  <description>Maven plugin versions and configuration.</description>
   <scm>
     <connection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</connection>
     <developerConnection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</developerConnection>
+    <tag>HEAD</tag>
     <url>https://github.com/andreasaronsson/maven-plugins</url>
-<tag>HEAD</tag>
   </scm>
+  <distributionManagement>
+    <repository>
+      <id>bintray-aron-maven</id>
+      <name>aron-maven</name>
+      <url>https://api.bintray.com/maven/aron/maven/${project.artifactId}/;publish=1</url>
+    </repository>
+  </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <sonar.host.url>http://example/</sonar.host.url>
@@ -36,9 +42,6 @@
           <groupId>com.itemis.maven.plugins</groupId>
           <artifactId>unleash-maven-plugin</artifactId>
           <version>2.9.3</version>
-          <configuration>
-            <tagNamePattern>rel-@{project.version}</tagNamePattern>
-          </configuration>
           <dependencies>
             <dependency>
               <groupId>com.itemis.maven.plugins</groupId>
@@ -46,6 +49,9 @@
               <version>2.2.1</version>
             </dependency>
           </dependencies>
+          <configuration>
+            <tagNamePattern>rel-@{project.version}</tagNamePattern>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -73,7 +79,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
           <configuration>
-          <release>11</release>
+            <release>11</release>
           </configuration>
         </plugin>
         <plugin>
@@ -119,6 +125,13 @@
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
           <version>2.5.3</version>
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.scm</groupId>
+              <artifactId>maven-scm-provider-jgit</artifactId>
+              <version>1.11.2</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <localCheckout>true</localCheckout>
             <goals>deploy</goals>
@@ -127,13 +140,6 @@
               <git>jgit</git>
             </providerImplementations>
           </configuration>
-          <dependencies>
-            <dependency>
-              <groupId>org.apache.maven.scm</groupId>
-              <artifactId>maven-scm-provider-jgit</artifactId>
-              <version>1.11.2</version>
-            </dependency>
-          </dependencies>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -208,12 +214,6 @@
       </plugin>
     </plugins>
   </build>
-  <distributionManagement>
-    <repository>
-      <id>bintray</id>
-      <url>https://api.bintray.com/maven/aron/maven/maven-plugins</url>
-    </repository>
-  </distributionManagement>
   <profiles>
     <profile>
       <id>codeCoverage</id>
