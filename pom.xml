@@ -9,7 +9,6 @@
     <connection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</connection>
     <developerConnection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</developerConnection>
     <url>https://github.com/andreasaronsson/maven-plugins</url>
-<tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <repository>
@@ -27,12 +26,12 @@
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-file</artifactId>
-        <version>3.3.3</version>
+        <version>3.3.4</version>
       </extension>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-webdav-jackrabbit</artifactId>
-        <version>3.3.3</version>
+        <version>3.3.4</version>
       </extension>
     </extensions>
     <pluginManagement>
