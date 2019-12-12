@@ -66,6 +66,7 @@
           <version>2.7</version>
           <configuration>
             <generateBackupPoms>false</generateBackupPoms>
+            <rulesUri>https://raw.githubusercontent.com/andreasaronsson/versions-rules/master/versions-rules.xml</rulesUri>
           </configuration>
         </plugin>
         <plugin>
