@@ -27,12 +27,12 @@
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-file</artifactId>
-        <version>3.4.2</version>
+        <version>3.4.3</version>
       </extension>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-webdav-jackrabbit</artifactId>
-        <version>3.4.2</version>
+        <version>3.4.3</version>
       </extension>
     </extensions>
     <pluginManagement>
