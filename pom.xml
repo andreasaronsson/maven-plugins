@@ -9,13 +9,16 @@
     <connection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</connection>
     <developerConnection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</developerConnection>
     <url>https://github.com/andreasaronsson/maven-plugins</url>
-<tag>HEAD</tag>
   </scm>
   <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
     <repository>
-      <id>bintray</id>
-      <name>aron-maven</name>
-      <url>https://api.bintray.com/maven/aron/maven/${project.artifactId}</url>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/
+      </url>
     </repository>
   </distributionManagement>
   <properties>
