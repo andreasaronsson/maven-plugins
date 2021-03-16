@@ -3,13 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>nu.aron</groupId>
   <artifactId>maven-plugins</artifactId>
-  <version>25-SNAPSHOT</version>
+  <version>25</version>
   <packaging>pom</packaging>
   <description>Maven plugin versions and configuration.</description>
   <scm>
     <connection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</connection>
     <developerConnection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</developerConnection>
     <url>https://github.com/andreasaronsson/maven-plugins</url>
+    <tag>maven-plugins-25</tag>
   </scm>
   <distributionManagement>
     <repository>
@@ -207,7 +208,7 @@
                 <requireOS>
                   <family>unix</family>
                 </requireOS>
-                <dependencyConvergence></dependencyConvergence>
+                <dependencyConvergence />
               </rules>
             </configuration>
           </execution>
