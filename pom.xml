@@ -5,12 +5,28 @@
   <artifactId>maven-plugins</artifactId>
   <version>26-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <name>${project.groupId}:${project.artifactId}</name>
   <description>Maven plugin versions and configuration.</description>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Andreas Aronsson</name>
+      <email>aron@aron.nu</email>
+      <organization>aron.nu</organization>
+      <organizationUrl>http://www.aron.nu</organizationUrl>
+    </developer>
+  </developers>
   <scm>
     <connection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</connection>
     <developerConnection>scm:git:git@github.com:andreasaronsson/maven-plugins.git</developerConnection>
-    <url>https://github.com/andreasaronsson/maven-plugins</url>
     <tag>HEAD</tag>
+    <url>https://github.com/andreasaronsson/maven-plugins</url>
   </scm>
   <distributionManagement>
     <repository>
@@ -197,7 +213,7 @@
                 <requireOS>
                   <family>unix</family>
                 </requireOS>
-                <dependencyConvergence />
+                <dependencyConvergence></dependencyConvergence>
               </rules>
             </configuration>
           </execution>
