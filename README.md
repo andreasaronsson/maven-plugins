@@ -7,4 +7,6 @@ Maven plugin versions and configuration
 
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
-To release with unleash; make sure ssh-agent is running.
+## Release with
+
+mvn -DperformRelease=true deploy
