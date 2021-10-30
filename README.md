@@ -9,4 +9,4 @@ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 ## Release with
 
-mvn -DperformRelease=true deploy
+mvn -DperformRelease=true clean deploy
