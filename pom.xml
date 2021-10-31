@@ -169,6 +169,27 @@
     </pluginManagement>
     <plugins>
       <plugin>
+       <artifactId>maven-enforcer-plugin</artifactId>
+       <executions>
+         <execution>
+           <id>enforce-versions</id>
+           <goals>
+             <goal>enforce</goal>
+           </goals>
+           <configuration>
+             <rules>
+               <requireMavenVersion>
+                 <version>3.8.3</version>
+               </requireMavenVersion>
+               <requireOS>
+                 <family>unix</family>
+               </requireOS>
+             </rules>
+           </configuration>
+         </execution>
+       </executions>
+     </plugin>
+     <plugin>
         <groupId>org.sonatype.plugins</groupId>
         <artifactId>nexus-staging-maven-plugin</artifactId>
         <version>1.6.8</version>
